@@ -1,0 +1,12 @@
+C:\temp\PictureBotDL\bin\Debug\PictureBotDL.exe.config
+C:\temp\PictureBotDL\bin\Debug\PictureBotDL.exe
+C:\temp\PictureBotDL\bin\Debug\PictureBotDL.pdb
+C:\temp\PictureBotDL\bin\Debug\Microsoft.Bot.Connector.DirectLine.dll
+C:\temp\PictureBotDL\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\temp\PictureBotDL\bin\Debug\Newtonsoft.Json.dll
+C:\temp\PictureBotDL\bin\Debug\Newtonsoft.Json.xml
+C:\temp\PictureBotDL\obj\Debug\PictureBotDL.csprojAssemblyReference.cache
+C:\temp\PictureBotDL\obj\Debug\PictureBotDL.csproj.CoreCompileInputs.cache
+C:\temp\PictureBotDL\obj\Debug\PictureBotDL.csproj.CopyComplete
+C:\temp\PictureBotDL\obj\Debug\PictureBotDL.exe
+C:\temp\PictureBotDL\obj\Debug\PictureBotDL.pdb

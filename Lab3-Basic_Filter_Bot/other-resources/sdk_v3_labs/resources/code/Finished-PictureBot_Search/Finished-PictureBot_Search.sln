@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finished-PictureBot_Search", "Finished-PictureBot_Search\Finished-PictureBot_Search.csproj", "{6924B15F-86F9-41FF-A063-82477C4A8E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6924B15F-86F9-41FF-A063-82477C4A8E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6924B15F-86F9-41FF-A063-82477C4A8E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6924B15F-86F9-41FF-A063-82477C4A8E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6924B15F-86F9-41FF-A063-82477C4A8E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F782D8B5-1440-4DF0-8187-F1D380840FB3}
+	EndGlobalSection
+EndGlobal

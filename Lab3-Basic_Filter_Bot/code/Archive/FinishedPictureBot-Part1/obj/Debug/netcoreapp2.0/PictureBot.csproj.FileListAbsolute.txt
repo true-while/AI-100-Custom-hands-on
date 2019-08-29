@@ -1,0 +1,11 @@
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\bin\Debug\netcoreapp2.0\PictureBot.deps.json
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\bin\Debug\netcoreapp2.0\PictureBot.runtimeconfig.json
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\bin\Debug\netcoreapp2.0\PictureBot.runtimeconfig.dev.json
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\bin\Debug\netcoreapp2.0\PictureBot.dll
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\bin\Debug\netcoreapp2.0\PictureBot.pdb
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.csprojAssemblyReference.cache
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.csproj.CoreCompileInputs.cache
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.AssemblyInfoInputs.cache
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.AssemblyInfo.cs
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.dll
+C:\github\givenscj\AI-100-Design-Implement-Azure-AISol\Lab3-Basic_Filter_Bot\code\FinishedPictureBot-Part1\obj\Debug\netcoreapp2.0\PictureBot.pdb

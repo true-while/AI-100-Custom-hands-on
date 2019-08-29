@@ -1,0 +1,16 @@
+﻿{
+  "CognitiveServicesKeys": {
+    "Url": "https://westus2.api.cognitive.microsoft.com/vision/v1.0",
+    "Vision": "9ca9030cda404afbac244ac877c00cce"
+  },
+  "AzureStorage": {
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=aistoragebevvezdsr2l4y;AccountKey=XeuoqooXpWTRNfSLOM2ZWbinw4j/ZjAgE1M8ozSP1jJqiZjn4DsbQzu5zkTbgDB0VSYGGPRhQIZxChJDOIVzhg==;EndpointSuffix=core.windows.net",
+    "BlobContainer": "images"
+  },
+  "CosmosDB": {
+    "EndpointURI": "https://cosmosdbbevvezdsr2l4y.documents.azure.com:443/",
+    "Key": "FKNERdkDkXxB6O4hxdq8Ap6UfRjdohFTJ8LVAj03T1wMvRVCYdYCZwzQxaWexMyXOsYdKsW6tFCHbhZ4Tc8btA==",
+    "DatabaseName": "images",
+    "CollectionName": "metadata"
+  }
+}
