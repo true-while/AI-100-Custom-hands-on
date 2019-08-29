@@ -124,7 +124,7 @@ Explore using custom entities of entity type "List" to capture emotion and gende
 
 ![Custom Emotion Entity with List](./resources/assets/CustomEmotionEntityWithList.jpg) 
 
-> **Note** When you add more entities or features, don't forget to go to **Intents>Utterances** and confirm/add more utterances with the entities you add. Also, you will need to retrain and publish your model.
+> Note: When you add more entities or features, don't forget to go to **Intents>Utterances** and confirm/add more utterances with the entities you add. Also, you will need to retrain and publish your model.
 
 
 ### Continue to [3_Bot](./3_Bot.md)

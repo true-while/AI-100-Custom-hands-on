@@ -52,7 +52,7 @@ Click **OK**.
 
 At this point Azure Search will connect to your Cosmos DB container and analyze a few documents to identify a default schema for your Azure Search Index. After this is complete, you can set the properties for the fields as needed by your application.
 
->**Note** You may see a warning that "_ts" fields are not valid field names. You can ignore this for our labs, but you can read more about it [here](https://docs.microsoft.com/azure/search/search-indexer-field-mappings).
+>Note: You may see a warning that "_ts" fields are not valid field names. You can ignore this for our labs, but you can read more about it [here](https://docs.microsoft.com/azure/search/search-indexer-field-mappings).
 
 Update the Index name to: **images**
 

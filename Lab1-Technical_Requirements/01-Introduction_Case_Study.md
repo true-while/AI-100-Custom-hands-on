@@ -1,11 +1,11 @@
-# Lab 1: Technical Requirements
+# Lab 1: Introducing Azure Cognitive Services
 
-## Introduction
+## Technical Requirements
+
 
 In this lab, we will introduce our workshop case study and setup tools on your local workstation and in your Azure instance to enable you to build tools within the Microsoft Cognitive Services suite.
 
-# Workshop Case Study
-
+# Case Study
 ## Scenario
 
 You've been assigned a new customer, Adventure Works LLC, which sells bicycles and bicycle equipment to its customers.
@@ -38,30 +38,16 @@ The interactive platform is envisioned as a bot that will consist of the followi
 
 - Log the chat bot session for later review
 
-We will build a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
-
-In the continuation of this lab throughout the lab, we'll show you how to build a [Bot Framework](https://dev.botframework.com/) bot to interact with customers' text inquiries. We will then demonstrate a quick solution for integrating existing Knowledge Bases and FAQs into a bot framework with the [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview). Finally, we'll extend this bot with [LUIS](https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis) to automatically derive intent from your queries and use those to respond to your customers' text requests intelligently.
-
-We will only provide context for using Bing Search to enable customers to access other data during interactions with the bot, but will not implement these scenarios during the lab. Participants are invited to read further about the [Bing Web Search](https://azure.microsoft.com/en-us/services/cognitive-services/directory/search/) services.
-
-While out of scope for this lab, this architecture integrates Azure's data solutions manage storage of images and metadata in this architecture, through [Blob Storage]((https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-how-to-use-blobs)) and [Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/).
-
-![Architecture Diagram](../images/AI_Immersion_Arch.png)
-
-
 ## Architecture
 
 Your team recently presented a potential architecture (below) that Adventure Works approved:
 
 ![architecture](../images/AI_Immersion_Arch.png)
 
+
+* [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) enables language detection
 * [Computer Vision](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) allows uploading images, detects contents
 * [QnA Maker](https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/) facilitating bot interactions from a static knowledge base
-* [Text Analytics](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) enables language detection
 * [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home)  (Language Understanding Intelligent Service)
 extracts intent and entities from text
 * [Azure Bot Service](https://azure.microsoft.com/en-us/services/bot-service/) connector service to enable chatbot interface to leverage app intelligence
-
-## Next Steps
-
--   [Lab 01-02: Technical Requirements](02-Technical_Requirements.md)

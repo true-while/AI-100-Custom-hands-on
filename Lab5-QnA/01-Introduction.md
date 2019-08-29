@@ -1,13 +1,7 @@
-# Lab 5: Introduction
+# Lab 5: Integrate QnA Maker with a Bot
 
-In this lab you will use the Microsoft QnA Maker application to create a knowledgebase, publish it and then consume it in your bot.
+QnA Maker provides a conversational question and answer layer over your data. This allows your bot to send QnA Maker a question and recieve an answer without you needing to parse and interpret the intent of their question.
 
-## QnA Maker Setup
+One of the basic requirements in creating your own QnA Maker service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQs or other documentation; other times, you may want to customize your answers to questions in a more natural, conversational way.
 
-You can find more information about QnA Maker [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview)
-
-### Module: M03-Enhancing_Bots_with_QnA_Maker
-
-## Next Steps
-
--   [Lab 05-02: QnA Maker Setup](../Lab5-QnA/02-QnAMaker_Setup.md)
+## Complete Time: 30 min

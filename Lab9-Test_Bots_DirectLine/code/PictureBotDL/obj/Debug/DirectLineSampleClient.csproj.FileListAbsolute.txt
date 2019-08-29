@@ -1,0 +1,12 @@
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\DirectLineSampleClient.exe.config
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\DirectLineSampleClient.exe
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\DirectLineSampleClient.pdb
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\Microsoft.Bot.Connector.DirectLine.dll
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\Newtonsoft.Json.dll
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\bin\Debug\Newtonsoft.Json.xml
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\obj\Debug\DirectLineSampleClient.csprojAssemblyReference.cache
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\obj\Debug\DirectLineSampleClient.csproj.CoreCompileInputs.cache
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\obj\Debug\DirectLineSampleClient.csproj.CopyComplete
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\obj\Debug\DirectLineSampleClient.exe
+D:\MOC\AI100\Done\Lab8\BotBuilder-Samples-3-sdk-samples\BotBuilder-Samples-3-sdk-samples\CSharp\core-DirectLine\DirectLineClient\obj\Debug\DirectLineSampleClient.pdb

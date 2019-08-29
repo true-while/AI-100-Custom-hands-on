@@ -90,7 +90,7 @@ Once you're connected, there are several things you need to do to set up the DSV
 	- Type in the Cortana search bar "gpedit.msc" and push enter. Enable the following policy: Computer Configuration>Windows Settings>Security Settings>Local Policies>Security Options>User Account Control: Admin Approval Mode for the Built-in Administrator account
 	- Start the "Collecting the keys" lab. 
 5. Once the install is complete and you have changed your devleoper settings and the User Account Control policy, reboot your DSVM. 
-> **Note** Be sure to turn off your DSVM after the workshop so you don't get charged.
+> Note: Be sure to turn off your DSVM after the workshop so you don't get charged.
 
 
 ### Lab: Collecting the Keys
@@ -450,7 +450,7 @@ Explore using custom entities of entity type "List" to capture emotion and gende
 
 ![Custom Emotion Entity with List](./resources/assets/CustomEmotionEntityWithList.jpg) 
 
-> **Note** When you add more entities or features, don't forget to go to `Intents>Utterances` and confirm/add more utterances with the entities you add. Also, you will need to retrain and publish your model.
+> Note: When you add more entities or features, don't forget to go to `Intents>Utterances` and confirm/add more utterances with the entities you add. Also, you will need to retrain and publish your model.
 
 ## Building a Bot
 
@@ -459,7 +459,7 @@ We assume that you've had some exposure to the Bot Framework. If you have, great
 ### Lab: Setting up for bot development
 
 We will be developing a bot using the C# SDK.  To get started, you need two things:
-1. The Bot Framework project template, which you can download [here](https://aka.ms/bf-bc-vstemplate).  The file is called "Bot Application.zip" and you should save it into the \Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#\ directory.  Just drop the whole zipped file in there; no need to unzip.  
+1. The Bot Framework project template, which you can download [here](https://aka.ms/bf-bc-vstemplate).  The file is called "Bot Application.zip" and you should save it into the \Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\ directory.  Just drop the whole zipped file in there; no need to unzip.  
 2. Download the Bot Framework Emulator for testing your bot locally [here](https://emulator.botframework.com/).  The emulator installs to `c:\Users\`_your-username_`\AppData\Local\botframework\app-3.5.27\botframework-emulator.exe`. 
 
 ### Lab: Creating a simple bot and running it
@@ -468,7 +468,7 @@ In Visual Studio, go to File --> New Project and create a Bot Application named 
 
 ![New Bot Application](./resources/assets/NewBotApplication.jpg) 
 
-Browse around and examine the sample bot code, which is an echo bot that repeats back your message and its length in characters.  In particular, **Note**
+Browse around and examine the sample bot code, which is an echo bot that repeats back your message and its length in characters.  In particular, note:
 + In **WebApiConfig.cs** under App_Start, the route template is api/{controller}/{id} where the id is optional.  That is why we always call the bot's endpoint with api/messages appended at the end.  
 + The **MessagesController.cs** under Controllers is therefore the entry point into your bot.  Notice that a bot can respond to many different activity types, and sending a message will invoke the RootDialog.  
 + In **RootDialog.cs** under Dialogs, "StartAsync" is the entry point which waits for a message from the user, and "MessageReceivedAsync" is the method that will handle the message once received and then wait for further messages.  We can use "context.PostAsync" to send a message from the bot back to the user.  

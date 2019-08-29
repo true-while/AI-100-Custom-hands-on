@@ -1,11 +1,5 @@
-# Lab 8: Detect User Language
+# Lab 8: Introduction (This lab is currently undergoing construction in accordance with the latest releases of the service)
 
-In this lab we will add the ability for your bot to detect languages from user input.
+## Detect User Language
 
-## Introduction
-
-If you have trained your bot or itegreated it with QnA Maker but have only done so using only one particular language, then it makes sense to info users of that fact.  
-
-## Next Steps
-
--   [Lab 09-02: Detect Language](../Lab8-Detect_Language/02-Detect_Language.md)
+### Module: M06-Integrate_Cognitive_Services_with_Bots_and_Agents

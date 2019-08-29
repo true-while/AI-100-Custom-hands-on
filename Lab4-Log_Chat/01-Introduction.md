@@ -1,8 +1,8 @@
-# Lab 4: Log Bot Chat
+# Lab 4: Implement Logging for Bot
 
-## Introduction
+## Logging Chat for Basic Filtering Bot
 
-In the previous lab, we started with an echo bot project and modified the code to suit our needs.  Now, we wish to log chats with our bots to enable our customer service team to follow up to inquiries, determine if the bot is performing in the expected manner, and to analyze customer data.
+In the previous lab, we built a chat bot and modified the downloaded code to suit out needs.  Now, we wish to log bot chats to enable our customer service team to follow up to inquiries, determine if the bot is performing in the expected manner, and to analyze customer data.
 
 This hands-on lab guides you through enabling various logging scenarios for your bot solutions.
 
@@ -14,6 +14,4 @@ In the advanced analytics space, there are plenty of uses for storing log conver
 
 In the course of the following labs, we'll walk through how we can enable chat logging and intercept messages. We will evoke some of the various ways we might also store the data, although data solutions are not within the scope of this workshop.
 
-## Next Steps
-
--   [Lab 04-02: Log Chat](../Lab4-Log_Chat/02-Logging_Chat.md)
+## Complete Time: 30 min

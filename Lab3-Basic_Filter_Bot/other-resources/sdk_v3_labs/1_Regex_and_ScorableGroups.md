@@ -8,7 +8,7 @@ We assume that you've had some exposure to the Bot Framework. If you have, great
 ### Lab 1.1: Setting up for bot development
 
 We will be developing a bot using the C# SDK.  To get started, you need two things:
-1. The Bot Framework project template, which you can download [here](http://aka.ms/bf-bc-vstemplate).  The file is called "Bot Application.zip" and you should save it into the \Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#\ directory.  Just drop the whole zipped file in there; no need to unzip.  
+1. The Bot Framework project template, which you can download [here](http://aka.ms/bf-bc-vstemplate).  The file is called "Bot Application.zip" and you should save it into the \Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\ directory.  Just drop the whole zipped file in there; no need to unzip.  
 2. Download the Bot Framework Emulator for testing your bot locally [here](https://github.com/Microsoft/BotFramework-Emulator/releases/download/v3.5.33/botframework-emulator-Setup-3.5.33.exe).  The emulator installs to `c:\Users\`_your-username_`\AppData\Local\botframework\app-3.5.33\botframework-emulator.exe` or your Downloads folder, depending on browser.
 
 ### Lab 1.2: Creating a simple bot and running it
@@ -19,7 +19,7 @@ In Visual Studio, go to File --> New Project and create a Bot Application named 
 
 >The rest of the **Creating a simple bot and running it** lab is optional. Per the prerequisites, you should have experience working with the Bot Framework. You can hit F5 to confirm it builds correctly, and move on to the next lab.
 
-Browse around and examine the sample bot code, which is an echo bot that repeats back your message and its length in characters.  In particular, **Note**
+Browse around and examine the sample bot code, which is an echo bot that repeats back your message and its length in characters.  In particular, note:
 + In **WebApiConfig.cs** under App_Start, the route template is api/{controller}/{id} where the id is optional.  That is why we always call the bot's endpoint with api/messages appended at the end.  
 + The **MessagesController.cs** under Controllers is therefore the entry point into your bot.  Notice that a bot can respond to many different activity types, and sending a message will invoke the RootDialog.  
 + In **RootDialog.cs** under Dialogs, "StartAsync" is the entry point which waits for a message from the user, and "MessageReceivedAsync" is the method that will handle the message once received and then wait for further messages.  We can use "context.PostAsync" to send a message from the bot back to the user.  

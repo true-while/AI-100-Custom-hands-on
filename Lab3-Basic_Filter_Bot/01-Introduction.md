@@ -1,6 +1,6 @@
-# Lab 3: Basic Filtering Bot
+# Lab 3: Creating a Basic Filtering Bot
 
-## Introduction
+## Developing Basic Filtering Bot
 
 In this lab, we will be setting up an intelligent bot from end-to-end that can respond to a user's chat window text prompt. We will be building on what we have already learned about building bots within Azure, but adding in a layer of custom logic to give our bot more bespoke functionality.
 
@@ -10,6 +10,4 @@ We will also be testing our bot in the Bot Emulator, and addressing the middlewa
 
 We will evoke some concepts pertaining to Azure Search, and Microsoft's Language Understanding Intelligent Service (LUIS), but will not implement them in this lab.
 
-## Next Steps
-
--   [Lab 03-02: Basic Filter Bot](../Lab3-Basic_Filter_Bot/02-Basic_Filter_Bot.md)
+## Complete Time: 90 min

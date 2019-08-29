@@ -1,138 +1,89 @@
 # Lab 5: Creating a Customized QnA Maker Bot
 
-##  Introduction
-
-In this lab we will explore the QnA Maker for creating bots that connect to a pre-trained knowledgebase.  Using QnAMaker, you can upload documents or point to web pages and have it pre-populate a knowledge base that can feed a simple bot for common uses such as frequently asked questions.
-
 ## Lab 5.1: QnA Maker Setup
 
-1.  Open the [Azure Portal](https://portal.azure.com)
+QnA Maker provides a conversational question and answer layer over your data. This allows your bot to send QnA Maker a question and receive an answer without you needing to parse and interpret the intent of their question.
 
-1.  Click **Add a new resource**
+One of the basic requirements in creating your own QnA Maker service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQs or other documentation; other times, you may want to customize your answers to questions in a more natural, conversational way.
 
-1.  Type **QnA Maker**, select **QnA Maker**
+### Prerequisites
 
-1.  Click **Create**
+- The code in this article is based on the QnA Maker [sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker). Download C# sample. 
+- Login in [QnA Maker account](https://www.qnamaker.ai/) with your Azure account.
 
-1.  Type a name
 
-1.  Select the **S0** tier for the resource pricing tier.  We aren't using the free tier because we will upload files that are larger than 1MB later.
+### Scenario
 
-1.  Select your resource group
+In this hands-on you will build bot to utilize QnA Maker, you'll need to first create a knowledge base on QnA Maker, which we'll cover in the next section.
+Your bot then can send it the user's query, and it will provide the best answer to the question in response.
 
-1.  For the search pricing tier, select the **F** tier
 
-1.  Enter an appname, it must be unique
+## Lab 5.1 Create a QnA Maker service and publish a knowledge base
 
-1.  Click **Create**.  This will created the following resources in your resource group:
+The first step is to create a QnA Maker service. Follow the steps to create the service in Azure.
 
--   App Service Plan
--   App Service
--   Application Insights
--   Search Service
--   Cognitive Service instance of type QnAMaker
--   Web App
+1. Sign in to the [QnAMaker.ai](http://qnamaker.ai) portal with your Azure credentials.
 
-## Lab 5.2: Create a KnowledgeBase
+1. On the QnA Maker portal, select **Create a knowledge base**.
 
-1.  Open the [QnA Maker site](https://qnamaker.ai)
+1. On the Create page, in step 1, select Create a QnA service. You are directed to the Azure portal to set up a QnA Maker service in your subscription. If the Azure portal times out, select Try again on the site. After you connect, your Azure dashboard appears.
 
-1.  Login using the Azure credentials for your new QnA Maker resource
+1. In QnA Maker, select the F0 tier and regions close to your location. Search pricing tier should be set to B with 15 indexes. When finish hit **Create** button. Wait until the QnA service will be created.
 
-1.  Click **Create a knowledge base**
+1. After you successfully create a new QnA Maker service in Azure, return to [QnAMaker.ai](http://qnamaker.ai). Select your QnA Maker service from the drop-down lists in step 2. If you just created a new QnA Maker service, be sure to refresh the page.
 
-1.  Skip step 1 as you have already created the resource
+1. In step 3, name your knowledge base **My Sample QnA KB**.
 
-1.  Select your Azure AD and Subscription tied to your QnA Maker resource, then select your newly created QnA Maker resource
+1. To add content to your knowledge base, select three types of data sources. In step 4, under Populate your KB, add the [BitLocker Recovery FAQ](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq) URL in the URL box.
 
-1.  For the name, type **Microsoft FAQs***
+1. Keep the rest by default and hit **Create** to create your KB.
 
-1.  For the file, click **Add file**, browse to the **code/surface-pro-4-user-guide-EN.pdf** file
+1. While QnA Maker creates the knowledge base, a pop-up window appears. The extraction process takes a few minutes to read the HTML page and identify questions and answers.
 
-1.  For the file, click **Add file**, browse to the **code/Manage Azure Blob Storage** file
+1. After QnA Maker successfully creates the knowledge base, the Knowledge base page opens. You can edit the contents of the knowledge base on this page.
 
-> **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/data-sources-supported)
+1. In the QnA Maker portal, on the Edit section, select Add QnA pair to add a new row to the knowledge base. Under Question, enter `Hi`. Under Answer, enter `Hello. Ask me BitLocker questions`. This will be used for discussion introduction.
 
-1.  For the **Chit-chat**, select **Witty**
+1. In the upper right, select Save and train to save your edits and train the QnA Maker model. Edits aren't kept unless they're saved.
 
-1.  Click **Create your KB**
+## Lab 5.2 Test the knowledge base
 
-## Lab 5.3: Publish and Test your Knowledge base
+1. In the QnA Maker portal, in the upper right, select Test to test that the changes you made took effect. Enter `hi` there in the box, and select Enter. You should see the answer you created as a response.
 
-1.  Review the knowledge base QnA pairs, you should see ~200 different pairs based on the two documents we fed it
+1. Select **Inspect** to examine the response in more detail. The test window is used to test your changes to the knowledge base before they're published.
 
-1.  In the top menu, click **PUBLISH**.  
+1. Select Test again to close the Test pop-up.
 
-1.  On the publish page, click **Publish**.  Once the service is published, click the **Create Bot** button on the success page
+## Lab 5.3 Publish the knowledge base
 
-1.  On the bot service creation page, fix any naming errors, then click **Create**.
+When you publish a knowledge base, the question and answer contents of your knowledge base moves from the test index to a production index in Azure search.
 
-> **Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
+In the QnA Maker portal, in the menu next to **Edit**, select **Publish**. Then to confirm, select **Publish** on the page.
 
-1.  Once the bot resource is created, navigate to the new **Web App Bot**, then click **Test in Web Chat**
+The QnA Maker service is now successfully published. You can use the endpoint in your bot code. Do not close the QnA page yet.
 
-1.  Ask the bot any questions related to a Surface Pro 4 or managing Azure Blog Storage:
+When you make changes to the knowledge base and republish, you don't need to take further action with the bot. It's already configured to work with the knowledge base, and works with all future changes to the knowledge base. Every time you publish a knowledge base, all the bots connected to it are automatically updated.
 
-+   How do I add memory?
-+   How long does it take to charge the battery?
-+   How do I hard reset?
-+   What is a blob?
+## Lab 5.4 Create a bot service
 
-1.  Ask it some questions it doesn't know, such as:
+1. In the QnA Maker portal, on the Publish page, select **Create bot**. This button appears only after you've published the knowledge base.
 
-+   How do I bowl a strike?
+1. A new browser tab opens for the Azure portal, with the Azure Bot Service's creation page. Configure the Azure bot service.
 
-## Lab 5.4: Download the Bot Source code
+Don't change the following settings in the Azure portal when creating the bot. They are pre-populated for your existing knowledge base:
+- QnA Auth Key
+- App service plan and location
+- Azure Storage
 
-1.  Click the **Build** tab
+1. The bot and QnA Maker can share the web app service plan, but can't share the web app. This means the app name must be different from the app name you used when you created the QnA Maker service.
 
-1.  Click **Download Bot source code**, when prompted click **Yes**.  
 
-1.  Azure will build your source code, when complete, click **Download Bot source code**
+## Lab 5.5 Testing a bot service
 
-1.  Extract the zip file to your local computer
+1. Now you can open created bot from Azure portal and select "Test in Web Chat".
 
-1.  Open the solution file, Visual Studio will open
+1. Start testing form `hi` message and bot should return you `Hello. Ask me BitLocker questions`.
 
-1.  Open the **Startup.cs** file, you will notice nothing special has been added here
+1. Next question you ask by query exact question from bitlocker [page](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq). Type *What credentials are required to use BitLocker?* the answer should be start from *To turn on, turn off, or change configurations of B*
 
-1.  Open the **Bots/{BotName}.cs** file, notice this is where the QnA Maker is being initalized:
-
-```csharp
-var qnaMaker = new QnAMaker(new QnAMakerEndpoint
-{
-    KnowledgeBaseId = _configuration["QnAKnowledgebaseId"],
-    EndpointKey = _configuration["QnAAuthKey"],
-    Host = GetHostname()
-},
-null,
-httpClient);
-```
-
-and then called:
-
-```csharp
-var response = await qnaMaker.GetAnswersAsync(turnContext);
-if (response != null && response.Length > 0)
-{
-    await turnContext.SendActivityAsync(MessageFactory.Text(response[0].Answer), cancellationToken);
-}
-else
-{
-    await turnContext.SendActivityAsync(MessageFactory.Text("No QnA Maker answers were found."), cancellationToken);
-}
-```
-
-As you can see, it is very simple to add a generated QnA Maker to your own bots with just a few lines of code.
-
-## Going Further
-
-What would you do to integrate the QnAMaker code into your picture bot?
-
-##  Resources
-
--   [What is the QnA Maker service?](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview)
-
-##  Next Steps
-
--   [Lab 06-01: Implement LUIS](../Lab6-Implement_LUIS/01-Introduction.md)
+1. Now lets try to modify question to let QnA perform intent analyzing: "Are credentials required to set up Bitlocker?". Then answer should be the same. It means the QnA KB has close to intent answer.
