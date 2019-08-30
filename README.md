@@ -86,6 +86,6 @@ In this hands-on we implement Language Detection feature of the Azure Text Analy
 This hands-on lab guides you through some of the basics of testing bots. This workshop demonstrates how you can perform functional testing (using Direct Line).
 
 - [introduction](/Lab9-Test_Bots_DirectLine/01-Introduction.md)
-- [hands-on](/Lab9-Test_Bots_DirectLine/02-Detect_Language.md)
+- [hands-on](/Lab9-Test_Bots_DirectLine/02-Test_Bots_DirectLine.md)
 
 ### Time to complete: 45 min
