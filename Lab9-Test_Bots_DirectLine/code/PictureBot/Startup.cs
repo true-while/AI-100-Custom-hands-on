@@ -102,8 +102,8 @@ namespace Microsoft.BotBuilderSamples
             {
                 // Get LUIS information
                 var luisApp = new LuisApplication(
-                    "e134eaa7-f232-41a5-b169-cd74df95a658", 
-                    "7bfa0b15bd7c4bd5be87b63b46c3f9cf",
+                    "...", 
+                    "...",
                     "https://westus.api.cognitive.microsoft.com/");
 
                 // Specify LUIS options. These may vary for your bot.

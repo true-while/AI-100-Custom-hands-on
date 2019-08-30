@@ -58,8 +58,7 @@ namespace Microsoft.BotBuilderSamples
                 var secretKey = Configuration.GetSection("MicrosoftAppId")?.Value;
                 var botFilePath = Configuration.GetSection("MicrosoftAppPassword")?.Value;
 
-                options.CredentialProvider = new SimpleCredentialProvider(endpointService.AppId, endpointService.AppPassword);
-
+                options.CredentialProvider = new SimpleCredentialProvider(secretKey, botFilePath);
             });
 
 
