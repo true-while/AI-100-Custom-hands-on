@@ -53,7 +53,7 @@ QnA Maker provides a conversational question and answer layer over your data. Th
 ### Time to complete: 30 min
 
 
-# Lab 6: Implement the LUIS Model
+## Lab 6: Implement the LUIS Model
 
 We're going to build an end-to-end scenario that allows you to pull in your own pictures, use Cognitive Services to find objects and people in the images, and obtain a description and tags. We'll later build a Bot Framework bot using LUIS to allow easy, targeted querying.
 
